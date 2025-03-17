@@ -91,5 +91,10 @@ public class UsuarioController {
         return ResponseEntity.noContent().build(); // Retorna el código de estado 204 (No Content)
     }
 
+    @GetMapping("/hola/")
+    public ResponseEntity<String> saludar(){
+        return ResponseEntity.ok().body("hola");
+    }
+
 }
 
